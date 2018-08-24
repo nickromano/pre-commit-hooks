@@ -1,0 +1,34 @@
+- id: flake8
+  name: Flake8
+  description: This hook runs flake8.
+  entry: flake8
+  language: python
+  language_version: python3
+  types: [python]
+  exclude: migrations|venv
+- id: mypy
+  name: MyPy
+  description: Checks type hinting is correct
+  entry: mypy
+  args: [--ignore-missing-imports, --strict-optional]
+  language: python
+  language_version: python3
+  types: [python]
+  exclude: migrations|venv
+- id: black
+  name: Black
+  description: Autoformatter check used
+  entry: black
+  args: [--check, --exclude="venv/*"]
+  language: python
+  language_version: python3
+  types: [python]
+  exclude: migrations|venv
+- id: migrations
+  name: Migrations Check
+  description: Make sure no migration files need to be created
+  entry: ./manage.py makemigrations
+  args: [--check]
+  language: system
+  types: [python]
+  pass_filenames: false
