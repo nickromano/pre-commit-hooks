@@ -1,0 +1,19 @@
+{
+  "name": "nr-pre-commit-hooks",
+  "version": "1.0.0",
+  "description": "Pre commit hooks",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickromano/pre-commit-hooks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickromano/pre-commit-hooks/issues"
+  },
+  "homepage": "https://github.com/nickromano/pre-commit-hooks#readme"
+}

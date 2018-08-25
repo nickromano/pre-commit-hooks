@@ -32,3 +32,10 @@
   language: system
   types: [python]
   pass_filenames: false
+- id: prettier-mk
+  name: Prettier Markdown
+  entry: prettier
+  language: node
+  types: [markdown]
+  args: [--write]
+  additional_dependencies: ["prettier@1.14.2"]
